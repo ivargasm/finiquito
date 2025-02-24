@@ -17,8 +17,8 @@ Este proyecto es una aplicación web desarrollada con **React**, **Tailwind CSS*
 ## Instalación y uso
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/cálculo-finiquito.git
-   cd cálculo-finiquito
+   git clone https://github.com/tu-usuario/finiquito.git
+   cd finiquito
    ```
 2. Instala las dependencias:
    ```bash
@@ -39,7 +39,6 @@ Este proyecto es una aplicación web desarrollada con **React**, **Tailwind CSS*
 /
 ├── src/
 │   ├── components/   # Componentes reutilizables
-│   ├── pages/        # Páginas de la aplicación
 │   ├── store/        # Gestión de estado con Zustand
 │   ├── App.jsx       # Componente principal
 │   ├── main.jsx      # Punto de entrada de React
