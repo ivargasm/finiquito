@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useStoreFiniquito } from '/src/store/useStoreFiniquito.jsx';
 import Disclaimer from './components/Disclaimer';
+import {BuyMeACoffeeButton} from './components/BuyMeACoffeeButton';
 
 const App = () => {
   const { isDark, toggleTheme } = useStoreFiniquito();
@@ -27,7 +28,7 @@ const App = () => {
     const vacaciones = (diasVacaciones / 365) * dias * sueldo;
     const diasNoPagados = (parseFloat(diasTrabajadosNoPagados) * sueldo) || 0
     const primaVacacional = vacaciones * 0.25;
-    
+
     return {
       aguinaldo: aguinaldo.toFixed(2),
       vacaciones: vacaciones.toFixed(2),
@@ -103,7 +104,7 @@ const App = () => {
             </div>
           </section>
           <section className="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Otros conceptos</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Otros conceptos</h2>
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Dias trabajados no pagados</label>
@@ -133,6 +134,13 @@ const App = () => {
         </section>
 
         <Disclaimer />
+
+        <section className="flex flex-col items-center justify-center mt-5 bg-gray-100 dark:bg-gray-900">
+          <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+            ¡Apoya este proyecto! 🚀
+          </h1>
+          <BuyMeACoffeeButton />
+        </section>
       </div>
     </main>
   );
